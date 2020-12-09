@@ -1,0 +1,250 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.busto {
+    background: linear-gradient(rgb(0, 0, 0),rgb(36, 17, 17) );
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+   
+    width: 100%;
+    height: 110vh;
+    
+    z-index: -1;
+    animation: page-color 1s cubic-bezier(0.23, 1, 0.320, 1) forwards 1s;
+    
+}
+
+@keyframes page-color {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+.headnav{
+    position: absolute;
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    width: 100%;
+    
+    animation: menu 0.5s ease-out forwards 1s;
+    
+}
+
+@keyframes menu{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.logopnghead{
+    
+    height: 75px;
+}
+
+.nav-bar{
+
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 8vh;
+    
+}
+
+.links li{
+    list-style: none;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+}
+
+
+#textnav{
+    font-family: swiss1;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 90%;
+    transition-duration: 0.2s;
+    color: rgb(0, 0, 0);
+    opacity: 0.5;
+}
+
+#textnav:hover{
+    font-size: 120%;
+    opacity: 1;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    z-index: +1;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.cuerpo{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+      
+}
+
+#circle {
+    background-color: rgb(255, 113, 113);
+    width: 50vh;
+    height: 50vh;
+    border-radius: 50%;
+    z-index: +1;
+    box-shadow: 50px 0px 50px 20px  rgba(0, 0, 0, 0.377);
+   
+}
+
+.logobox{
+    /*background: cyan;*/
+    width: 45%;
+}
+
+#sergiohome{
+    /*background: crimson;*/
+    width: 100%;
+}
+
+#data{
+    font-family: swiss1;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    font-size: 100%;
+    width: 66.6%;
+
+}
+
+#cta-listen{
+    width: 33.3%;
+    font-family: swiss1;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: solid none 1px;
+    text-decoration: none;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    border-radius: 40px;
+    background-color: rgb(255, 38, 0);
+    transition-duration: 0.7s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cta-listen:hover #escuchalo{
+
+    transition-duration: 0.5s;
+}
+
+#portrait{
+    position: absolute;
+    display: flex;
+    height: 85vh;
+    left: 0vh;
+    top: 5vh;
+    z-index: 1;
+}
+
+
+
+#cta-listen:hover{
+    background-color: rgba(255, 38, 0, 0.555);
+    padding-bottom: 80px;
+    box-shadow: rgba(0, 0, 0, 0.233) 20px 20px 20px 20px;
+    transition-duration: 0.5s;
+}
+
+.icon-cta {
+    height: 45px;
+    opacity: 0.5;
+    transition-duration: 0.5s;
+}
+
+.icon-cta:hover {
+    height: 50px;
+    transition-duration: 0.5s;
+    opacity: 1;
+}
+
+#logo-str{
+    position: absolute;
+    opacity: 0;
+    transition-duration: 0.5s;
+    
+}
+
+
+#cta-listen:hover #logo-str{
+    
+    opacity: 1;
+    
+    transition-duration: 0.5s;
+    transform: translateY(40px);
+   
+   
+}
+
+.solid-side{
+    margin: 0;
+    padding: 0;
+    background: rgb(0, 183, 255);
+    width: 20%;
+    height: 110vh;
+    position: absolute;
+    top:0;
+    left: 0;
+    animation: colocado-side 0.5s ease-in forwards 1s;
+    opacity: 0;
+    
+    z-index: -1;
+}
+
+@keyframes colocado-side{
+    0%{
+        opacity: 0; 
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#soft-sergio { 
+    height: fit-content;
+    width: 600px;
+    font-size: 200px;
+    position: absolute;
+    right: 50vh;
+    bottom: 0vh;
+    font-family: ammonite;
+    opacity: 0.05;
+    z-index: -1;
+    
+}
